@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+ var num = 10;
+ var num = 0xA;
+ //浮点数 有一个精度问题
+ var money = '我很喜欢\"黑马\"程序员';
+ console.log(money.length);
+ //加号  如果是number类型的变量 执行的是数学运算的加号
+ var n1 = 5;
+ var n2 = 6;
+ console.log(n1+n2);
+ var s1 = 'abc';
+ var s2 = '1234';
+ console.log(s1+s2);
+ var s1 = "123";
+ var num = "abc";
+ console.log(s1+num);//将数值类型自动转换为字符串然后进行拼接
+ //字符串转换 toString 方式
+ console.log(typeof n1.toString());
+ //String方式
+ console.log(typeof String(n1));
+ //字符串拼接
+ var num = 19;
+ var isRight =true;
+ console.log(typeof (isRight+num)); 
+ //获取变量类型
+ console.log(typeof n1);
+ //转换为数值类型  Number() 把字符串转换成数值类型的时候，如果字符串中有一个字符不是数字就返回NaN
+ var str = 'abc';
+console.log(Number(str));
+//2、parseInt() parseInt 遇到数字会转换数字 遇到非数字会返回
+var str = '123';
+var num2 = 'ab123';
+console.log(parseInt(num2));
+console.log(parseInt(str));
+console.log(parseInt(isRight));
+//3.parseFloat();
+var str3 = "123.67";
+var isRight2 = true;
+console.log(parseFloat(str3));
+console.log(parseInt(str3));//返回123
+//取＋取－
+var num4 = +4;
+console.log(num);
+var str = '123';
+console.log(+str);//计算机自动转换
+var isok = true;
+console.log(+isok);
+//步尔类型转换  null undefined ''  0  NaN是false
+</script>
+	
+</body>
+</html>
