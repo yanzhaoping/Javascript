@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+.frame {margin: 0 auto;
+		margin-top: 50px;	
+		width: 400px;	
+		height: 300px;
+		position: relative;
+		background-color: yellow;}
+#div1 {
+	/*绝对定位是相对于第一个具有定位属性的值开始的 并且该元素从文档流中脱离出来 如果没有定位信息，那么回相对于body主体定位*/
+	position: absolute;
+	left:100px;
+	right:50px;
+		width: auto;/*相对于第一个具有定位属性的值*/	
+		height: 50px;	
+		margin-top: 110px;/*相对于frame来定位*/
+		background-color: blue;}
+#div2 {	width: 200px;	
+		height: 100px;
+		position: relative;/*相对于原本自身的位置来确定的，元素仍处于文档流中 元素大小会影响父元素*/
+		top:10px;
+		background-color: green;}
+
+</style>
+<body>
+ <div class="frame">
+
+            <div id="div1"></div>
+
+            <div id="div2"></div>
+
+        </div>
+
+</body>
+</html>
